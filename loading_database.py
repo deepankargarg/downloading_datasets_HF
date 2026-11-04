@@ -12,9 +12,6 @@ class DatasetLoader:
         Download necessary libraries for dataset loading.
         """
         print("Downloading necessary libraries...")
-        # Here you can add any library download logic if needed
-        # For example, you might want to ensure that the 'datasets' library is installed
-        # However, since we are already importing it, we assume it's available
 
     def load(self):
         """
@@ -23,11 +20,3 @@ class DatasetLoader:
         print(f"Downloading libraries")
         print(f"Loading dataset with ID: {self.dataset_id}")
         return datasets.load_dataset(self.dataset_id)
-
-# if __name__ == "__main__":
-#     # Example usage
-#     dataset_id = "imdb"  # Replace with your desired dataset ID
-#     loader = DatasetLoader(dataset_id)
-#     loader.download_libraries()
-#     dataset = loader.load()
-#     print(f"Dataset loaded: {dataset}")
